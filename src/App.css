@@ -27,6 +27,43 @@ body.dark-mode {
   cursor: pointer;
 }
 
+.weather-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
+
+@media screen and (min-width: 768px) and ( max-width: 992px) {
+  .weather-layout {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+}
+
+/* current location layout starts */
+.current-location-layout {
+  min-height: 300px;
+  min-width: 300px;
+}
+
+.gif-loader-layout{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif-loader-layout img {
+  height: 200px;
+  width: 200px;
+}
+
+.current-location-layout{
+  display: flex;
+  align-items: flex-end;
+}
 
 
 .app {
