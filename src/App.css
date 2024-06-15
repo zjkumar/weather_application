@@ -29,14 +29,14 @@ body.dark-mode {
 
 .weather-layout {
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 25px;
+  /* width: ; */
 }
 
 @media screen and (min-width: 768px) and ( max-width: 992px) {
   .weather-layout {
-    flex-direction: column;
     padding: 15px;
   }
   
@@ -44,26 +44,30 @@ body.dark-mode {
 
 /* current location layout starts */
 .current-location-layout {
-  min-height: 300px;
-  min-width: 300px;
-}
-
-.gif-loader-layout{
+  padding: 20px;
+  min-height: 250px;
+  min-width: 250px;
+  border-radius: 10px;
+  background-color: #4ca9db;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 12px 2px #000000;
 }
 
-.gif-loader-layout img {
-  height: 200px;
-  width: 200px;
+.dark-box-shadow {
+  box-shadow: 0px 0px 12px 2px #ffffff;
 }
 
+/* 
 .current-location-layout{
   display: flex;
-  align-items: flex-end;
-}
+  flex-direction: column;
+  align-items: center;
+
+} */
 
 
 .app {
@@ -79,4 +83,10 @@ header {
   align-items: center;
   padding: 15px;
   height: 60px;
+}
+
+
+.weather-info-layout{
+  list-style-type: none;
+  padding-left: 0px;
 }
