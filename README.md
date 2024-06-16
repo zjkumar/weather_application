@@ -27,7 +27,7 @@ To set up and run the project locally, follow these steps:
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/your-username/weather-app.git
+    git clone https://github.com/zjkumar/weather-app.git
     cd weather-app
     ```
 
