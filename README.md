@@ -69,10 +69,10 @@ To set up and run the project locally, follow these steps:
 ## Usage
 
 1. **Opening the App**:
-    When the user opens the application, it requests permission to access their geolocation. Upon granting permission, the app fetches and displays the current weather for the user's location in a card format.
+    When the application is opened, it requests the user's geolocation. Upon receiving permission, the app fetches and displays the weather information for the current location in a card.
 
 2. **Searching for Locations**:
-    Users can search for weather information by entering a city name or zip code in the search bar. The fetched weather information will be displayed in new cards, and users can scroll through the cards to view weather data for previous locations.
+    Users can search for weather information by entering a city name or zip code into the search bar. The weather information for the searched location is displayed in a new card, and users can scroll through the cards to view weather data for multiple locations.
 
 ## Future Enhancements
 
