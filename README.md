@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Weather Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a weather application developed as part of the hiring process for a Frontend Developer intern position. The application provides users with current weather information based on their location or any location they search for. The app also includes features like dark mode, the ability to search for multiple locations, and a responsive design.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Geolocation-based Weather**: When the user opens the website, it requests their location to display the current weather.
+- **Search Functionality**: Users can search for weather information by city name or zip code.
+- **Multiple Locations**: Users can fetch weather data for multiple locations, and the results will be displayed in a scrollable card format.
+- **Dark Mode**: A toggle button to switch between dark mode and light mode.
+- **Responsive Design**: The app works well on various devices, including desktops, tablets, and mobile phones.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React.js
+- **API**: OpenWeather API
+- **Styling**: CSS
+- **Unique IDs**: UUID
+- **HTTP Requests**: Axios
+- **Icons**: FontAwesome
 
-### `npm test`
+## Setup and Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To set up and run the project locally, follow these steps:
 
-### `npm run build`
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/your-username/weather-app.git
+    cd weather-app
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. **Install Dependencies**:
+    Make sure you have [Node.js](https://nodejs.org/) installed. Then run:
+    ```bash
+    npm install
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. **Run the Development Server**:
+    Start the development server using:
+    ```bash
+    npm start
+    ```
+    The app will be available at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. **Build the Project**:
+    To build the project for production, use:
+    ```bash
+    npm run build
+    ```
+    This will create a `build` directory with the production build of your app.
 
-### `npm run eject`
+## Project Structure
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **src/App.js**: Main application component that handles state and API calls.
+- **src/components/Header/index.js**: Header component that includes the dark mode toggle.
+- **src/components/CurrentLocation/index.js**: Component to display weather for the user's current location.
+- **src/components/Search/index.js**: Search bar component for fetching weather data by city name or zip code.
+- **src/components/WeatherInfo/index.js**: Component to display weather information in a card format.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Libraries and Tools
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React.js**: A JavaScript library for building user interfaces.
+- **Axios**: Promise-based HTTP client for the browser and Node.js used for making API calls.
+- **UUID**: Library for generating unique IDs, used for React keys.
+- **FontAwesome**: Icon library used for adding icons to the application.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Usage
 
-## Learn More
+1. **Opening the App**:
+    When the user opens the application, it requests permission to access their geolocation. Upon granting permission, the app fetches and displays the current weather for the user's location in a card format.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. **Searching for Locations**:
+    Users can search for weather information by entering a city name or zip code in the search bar. The fetched weather information will be displayed in new cards, and users can scroll through the cards to view weather data for previous locations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Future Enhancements
 
-### Code Splitting
+- **Enhanced Error Handling**: Improve feedback for various error scenarios.
+- **Additional Weather Information**: Display more detailed weather data like forecasts, sunrise/sunset times, etc.
+- **Improved UI/UX**: Further enhance the user interface and experience based on user feedback.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## License
 
-### Analyzing the Bundle Size
+This project is open-source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Note**: Replace `YOUR_API_KEY` with your actual OpenWeather API key in the API call URLs within the code.

@@ -19,6 +19,13 @@ body.dark-mode {
   width: 70px;
 }
 
+@media screen and (max-width: 992px) {
+  .weather-logo{
+    height: 45px;
+    width: 45px;
+  } 
+}
+
 .theme-button {
   background-color: transparent;
   border: none;
@@ -63,6 +70,7 @@ body.dark-mode {
 
 /* 
 .current-location-layout{
+
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,0 +1,12 @@
+.search-bar {
+    padding: 10px;
+    margin: 5px;
+}
+
+.search-btn {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    border-radius: 9px;
+    margin: 5px;
+}
