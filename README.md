@@ -74,6 +74,9 @@ To set up and run the project locally, follow these steps:
 2. **Searching for Locations**:
     Users can search for weather information by entering a city name or zip code into the search bar. The weather information for the searched location is displayed in a new card, and users can scroll through the cards to view weather data for multiple locations.
 
+## Deployment
+    The application is deployed on Vercel and can be accessed at weather-application-inky-sigma.vercel.app.
+
 ## Future Enhancements
 
 - **Enhanced Error Handling**: Improve feedback for various error scenarios.
